@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Strength Checker</title>
 </head>
+
 <body>
     <div class="container">
-        <h1>Strength Checker</h1>
+        <img id="icon" src="/images/3d-lock.png">
+        <h1>Strength <span>Checker</span></h1>
         <div id="input-area">
             <input type="password" name="password-checker" id="password" placeholder="Password">
-            <button onclick="" id="check-password"><img src="/images/send.png" alt=""></button>
+            <button onclick="showPassword()" id="show-password"><img id="show-password-icon" src="/images/blind.png" alt=""></button>
         </div>
         <div class="status-area">
-        <p id="message">Your password is:<span id="strength">unclassified</span>.</p>
-    </div>
+            <p id="message">Your password is:<span id="strength">unclassified</span>.</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
-
-

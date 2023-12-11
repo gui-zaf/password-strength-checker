@@ -6,8 +6,7 @@
 }
 
 body {
-    background: rgb(255,255,255);
-    background: linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(233,212,233,1) 40%, rgba(121,120,240,0.504424778761062) 100%);
+    background: rgb(240, 238, 238);
 }
 
 .container {
@@ -18,11 +17,26 @@ body {
     height: 100vh;
 }
 
+#icon {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0.25rem 3px #62606064);
+    transition: 1s;
+}
+
+#icon:hover {
+    filter: drop-shadow(0 0.35rem 6px #ffffff64);
+}
+
 h1 {
     font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    color: rgb(28, 28, 28);
+    color: #FAC632;
+}
+
+h1 span {
+    color: #1a1919;
 }
 
 #input-area {
@@ -33,22 +47,18 @@ h1 {
     margin-top: 20px;
     border: 0.2rem solid #504f4f;
     border-radius: 0.5rem;
-}
-
-::placeholder {
-    color: #928f8f;
+    padding: 0.2rem;
 }
 
 input {
     width: 20rem;
     height: 3rem;
     padding: 0 1rem;
-    font-size: 2em;
+    font-size: 1.5em;
     outline: none;
     border: none;
-    letter-spacing: 0.2rem;
     background-color: transparent;
-    color: #504f4f;
+    color: #1a1919;
 }
 
 button {
@@ -79,13 +89,14 @@ button img {
 #strength {
     font-weight: bold;
     margin-left: 0.2rem;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
-.container {
-    position: relative;
-    bottom: 10rem;
-}
+    .container {
+        position: relative;
+        bottom: 15rem;
+    }
 
     h1 {
         font-size: 1.5rem;
