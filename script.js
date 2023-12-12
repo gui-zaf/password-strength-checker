@@ -11,13 +11,13 @@ password.addEventListener("input", () => {
     const hasNumber = /[0-9]+/.test(passwordValue);
 
     // if you want to see the values in the console uncomment the line below:
-    console.log(passwordValue, passwordLength, hasUppercase, hasSpecialChar, hasNumber);
+    // console.log(passwordValue, passwordLength, hasUppercase, hasSpecialChar, hasNumber);
 
     if (passwordLength >= 12 && hasUppercase && hasSpecialChar && hasNumber) {
         strength.innerHTML = "strong";
         strength.style.color = "#26d176";
         inputArea.style.borderBottomColor = "#26d176";
-    } else if (passwordLength >= 6) {
+    } else if (passwordLength >= 6 &&  hasUppercase) {
         strength.innerHTML = "medium";
         inputArea.style.borderBottomColor = "#2687d1";
         strength.style.color = "#2687d1";
